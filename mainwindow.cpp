@@ -7,7 +7,7 @@
 #include "ui_mainwindow.h"
 
 void MainWindow::writefile() {
-    if(ui->path->text() != "File") {
+    if(ui->path->text() != "File" && ui->path->text() != "") {
         QFile file(ui->path->text());
         file.open(QIODevice::WriteOnly | QIODevice::Text);
         QTextStream out(&file);
