@@ -14,5 +14,6 @@ Build Instructions
 ==================
 * On Windows install MinGW
 * Install Qt4
-* run qmake
-* run make on Linux and make -f Makefile.Release on Windows
+* Run qmake
+* Run make on Linux and make -f Makefile.Release on Windows
+* Use NSIS installer to create a distributable package.
