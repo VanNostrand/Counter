@@ -12,6 +12,8 @@ Images are from the Crystal Clear icon set by Everaldo Coelho, licensed under LG
 
 Build Instructions
 ==================
+You can download the source code from https://github.com/VanNostrand/Counter
+
 * On Windows install MinGW
 * Install Qt4
 * Run qmake
