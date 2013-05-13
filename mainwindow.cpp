@@ -34,7 +34,7 @@ void MainWindow::on_plusButton_clicked()
 {
     QDateTime dateTime = QDateTime::currentDateTime();
     double value = ui->lcd->value();
-    ui->log->appendPlainText(dateTime.toString("yyyy-MM-dd:hh:mm:ss") + "    " +
+    ui->log->appendPlainText(dateTime.toString("yyyy-MM-ddThh:mm:ss") + "    " +
                              QString::number((int) value) + " -> " + QString::number((int) value + 1) + "    (+1)");
     ui->lcd->display(value + 1);
     writefile();
@@ -44,7 +44,7 @@ void MainWindow::on_minusButton_clicked()
 {
     QDateTime dateTime = QDateTime::currentDateTime();
     double value = ui->lcd->value();
-    ui->log->appendPlainText(dateTime.toString("yyyy-MM-dd:hh:mm:ss") + "    " +
+    ui->log->appendPlainText(dateTime.toString("yyyy-MM-ddThh:mm:ss") + "    " +
                              QString::number((int) value) + " -> " + QString::number((int) value - 1) + "    (-1)");
     ui->lcd->display(value - 1);
     writefile();
@@ -63,7 +63,7 @@ void MainWindow::on_setButton_clicked()
             mod = "    (+" + QString::number((int) setvalue - value) + ")";
         }
     }
-    ui->log->appendPlainText(dateTime.toString("yyyy-MM-dd:hh:mm:ss") + "    " +
+    ui->log->appendPlainText(dateTime.toString("yyyy-MM-ddThh:mm:ss") + "    " +
                              QString::number((int) value) + " -> " + QString::number((int) setvalue) + mod);
     ui->lcd->display(setvalue);
     writefile();
