@@ -33,7 +33,7 @@
          </property>
          <property name="icon">
           <iconset resource="Images.qrc">
-           <normaloff>:/img/img/Crystal_Clear_action_edit_add.png</normaloff>:/img/img/Crystal_Clear_action_edit_add.png</iconset>
+           <normaloff>:/img/Crystal_Clear_action_edit_add.png</normaloff>:/img/Crystal_Clear_action_edit_add.png</iconset>
          </property>
         </widget>
        </item>
@@ -51,7 +51,7 @@
          </property>
          <property name="icon">
           <iconset resource="Images.qrc">
-           <normaloff>:/img/img/Crystal_Clear_action_edit_remove.png</normaloff>:/img/img/Crystal_Clear_action_edit_remove.png</iconset>
+           <normaloff>:/img/Crystal_Clear_action_edit_remove.png</normaloff>:/img/Crystal_Clear_action_edit_remove.png</iconset>
          </property>
         </widget>
        </item>
@@ -154,7 +154,7 @@
          </property>
          <property name="icon">
           <iconset resource="Images.qrc">
-           <normaloff>:/img/img/Crystal_Clear_action_filenew.png</normaloff>:/img/img/Crystal_Clear_action_filenew.png</iconset>
+           <normaloff>:/img/Crystal_Clear_action_filenew.png</normaloff>:/img/Crystal_Clear_action_filenew.png</iconset>
          </property>
         </widget>
        </item>
