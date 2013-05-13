@@ -29,6 +29,7 @@ Section "Application" SecApplication
 	SetOutPath "$INSTDIR"
 	File ..\release\Counter.exe
 	File ..\COPYING
+	File ..\README.md
 	File C:\MinGW\bin\libstdc++-6.dll
 	File C:\MinGW\bin\libgcc_s_dw2-1.dll
 	File C:\MinGW\bin\mingwm10.dll
@@ -55,6 +56,7 @@ SectionEnd
 Section Uninstall
 	Delete "$INSTDIR\Counter.exe"
 	Delete "$INSTDIR\COPYING"
+	Delete "$INSTDIR\README.md"
 	Delete "$INSTDIR\uninstall.exe"
 	Delete "$INSTDIR\libstdc++-6.dll"
 	Delete "$INSTDIR\libgcc_s_dw2-1.dll"
