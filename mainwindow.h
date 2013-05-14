@@ -29,6 +29,8 @@ private slots:
     void on_addButton_clicked();
 
 private:
+    QPalette* palette;
+    
     Ui::MainWindow *ui;
     void update(double);
     void decorate();
