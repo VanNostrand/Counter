@@ -43,6 +43,7 @@ private slots:
     void on_plusFive_clicked();
 
 private:
+    QPalette* palette;
     Ui::MainWindow *ui;
     void update(double);
     void decorate();

@@ -18,7 +18,6 @@ void MainWindow::writefile() {
 
 void MainWindow::decorate() {
     ui->lcd->setAutoFillBackground(true);
-    QPalette* palette = new QPalette();
     palette->setColor(QPalette::Window,Qt::lightGray);
 
     double value = ui->lcd->value();
@@ -62,11 +61,13 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setFixedSize(this->geometry().width(),this->geometry().height());
+    palette = new QPalette();
     decorate();
 }
 
 MainWindow::~MainWindow()
 {
+    delete palette;
     delete ui;
 }
 
