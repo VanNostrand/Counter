@@ -31,6 +31,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void update(double);
+    void decorate();
     void writefile();
 };
 
