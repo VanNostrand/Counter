@@ -54,7 +54,7 @@ void MainWindow::on_setButton_clicked()
 {
     QDateTime dateTime = QDateTime::currentDateTime();
     double value = ui->lcd->value();
-    double setvalue = ui->setvalue->value();
+    double setvalue = ui->setValue->value();
     QString mod = "";
     if(value > setvalue) {
         mod = "    (-" + QString::number((int) value - setvalue) + ")";
@@ -81,4 +81,21 @@ void MainWindow::on_fileButton_clicked()
     ui->path->setText(QFileDialog::getOpenFileName(this, tr("Open File"),
                                                     QDir::homePath(),
                                                     tr("Textfiles (*.txt)")));
+}
+
+void MainWindow::on_addButton_clicked()
+{
+    QDateTime dateTime = QDateTime::currentDateTime();
+    double value = ui->lcd->value();
+    double addvalue = ui->addValue->value();
+    QString mod = "";
+    if(addvalue < 0) {
+        mod = "    (" + QString::number((int)addvalue) + ")";
+    } else {
+        mod = "    (+" + QString::number((int)addvalue) + ")";
+    }
+    ui->log->appendPlainText(dateTime.toString("yyyy-MM-ddThh:mm:ss") + "    " +
+                             QString::number((int) value) + " -> " + QString::number((int) value + addvalue) + mod);
+    ui->lcd->display(value + addvalue);
+    writefile();
 }
