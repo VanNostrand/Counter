@@ -26,7 +26,21 @@ private slots:
 
     void on_fileButton_clicked();
 
-    void on_addButton_clicked();
+    void on_plusTwo_clicked();
+
+    void on_plusThree_clicked();
+
+    void on_plusFour_clicked();
+
+    void on_minusTwo_clicked();
+
+    void on_minusThree_clicked();
+
+    void on_minusFour_clicked();
+
+    void on_minusFive_clicked();
+
+    void on_plusFive_clicked();
 
 private:
     Ui::MainWindow *ui;

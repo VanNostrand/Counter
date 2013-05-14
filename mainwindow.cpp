@@ -1,4 +1,3 @@
-#include <QDateTime>
 #include <QFileDialog>
 #include <QFile>
 #include <QDir>
@@ -52,15 +51,6 @@ void MainWindow::decorate() {
 }
 
 void MainWindow::update(double v) {
-    QDateTime dateTime = QDateTime::currentDateTime();
-    double value = ui->lcd->value();
-    double diff = -1*(value - v);
-    QString sgn = "";
-    if(diff >= 0)
-        sgn = "+";
-
-    ui->log->appendPlainText(dateTime.toString("yyyy-MM-ddThh:mm:ss") + "\t" +
-                             QString::number((int) value) + QString::fromUtf8(" \u21A6 ") + QString::number((int) v) + "\t(" + sgn + QString::number((int) diff) + ")");
     ui->lcd->display(v);
     decorate();
     writefile();
@@ -98,7 +88,6 @@ void MainWindow::on_setButton_clicked()
 void MainWindow::on_resetButton_clicked()
 {
     ui->lcd->display(ui->resetValue->value());
-    ui->log->clear();
     decorate();
     writefile();
 }
@@ -108,7 +97,43 @@ void MainWindow::on_fileButton_clicked()
     ui->path->setText(QFileDialog::getOpenFileName(this, tr("Open File"), QDir::homePath(), tr("Textfiles (*.txt)")));
 }
 
-void MainWindow::on_addButton_clicked()
+void MainWindow::on_plusTwo_clicked()
 {
-    update(ui->lcd->value() + ui->addValue->value());
+    update(ui->lcd->value() + 2);
 }
+
+void MainWindow::on_plusThree_clicked()
+{
+    update(ui->lcd->value() + 3);
+}
+
+void MainWindow::on_plusFour_clicked()
+{
+    update(ui->lcd->value() + 4);
+}
+
+void MainWindow::on_plusFive_clicked()
+{
+    update(ui->lcd->value() + 5);
+}
+
+void MainWindow::on_minusTwo_clicked()
+{
+    update(ui->lcd->value() - 2);
+}
+
+void MainWindow::on_minusThree_clicked()
+{
+    update(ui->lcd->value() - 3);
+}
+
+void MainWindow::on_minusFour_clicked()
+{
+    update(ui->lcd->value() - 4);
+}
+
+void MainWindow::on_minusFive_clicked()
+{
+    update(ui->lcd->value() - 5);
+}
+

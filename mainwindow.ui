@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>472</width>
-    <height>269</height>
+    <width>453</width>
+    <height>103</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MtG Counter 1.1</string>
+   <string>MtG Counter 1.1 - Manabase Edition</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>471</width>
-      <height>270</height>
+      <width>451</width>
+      <height>101</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -58,66 +58,71 @@
       </layout>
      </item>
      <item>
-      <widget class="QPlainTextEdit" name="log">
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QPushButton" name="addButton">
+        <widget class="QPushButton" name="plusTwo">
          <property name="text">
-          <string>Add</string>
+          <string>+2</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QSpinBox" name="addValue">
-         <property name="minimum">
-          <number>-500</number>
+        <widget class="QPushButton" name="plusThree">
+         <property name="text">
+          <string>+3</string>
          </property>
-         <property name="maximum">
-          <number>500</number>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="plusFour">
+         <property name="text">
+          <string>+4</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="plusFive">
+         <property name="text">
+          <string>+5</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="minusTwo">
+         <property name="text">
+          <string>-2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="minusThree">
+         <property name="text">
+          <string>-3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="minusFour">
+         <property name="text">
+          <string>-4</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="minusFive">
+         <property name="text">
+          <string>-5</string>
          </property>
         </widget>
        </item>
       </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QPushButton" name="setButton">
-         <property name="text">
-          <string>Set</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="setValue">
-         <property name="minimum">
-          <number>-500</number>
-         </property>
-         <property name="maximum">
-          <number>500</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <spacer name="verticalSpacer">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -141,43 +146,51 @@
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <spacer name="verticalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
-        <widget class="QLineEdit" name="path">
-         <property name="text">
-          <string>File</string>
-         </property>
-         <property name="readOnly">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="fileButton">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="Images.qrc">
-           <normaloff>:/img/Crystal_Clear_action_filenew.png</normaloff>:/img/Crystal_Clear_action_filenew.png</iconset>
-         </property>
-        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="setButton">
+             <property name="text">
+              <string>Set</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="setValue">
+             <property name="minimum">
+              <number>-500</number>
+             </property>
+             <property name="maximum">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="path">
+           <property name="text">
+            <string>File</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="fileButton">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="Images.qrc">
+             <normaloff>:/img/Crystal_Clear_action_filenew.png</normaloff>:/img/Crystal_Clear_action_filenew.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
