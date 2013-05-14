@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MtG Counter 1.1 - Manabase Edition</string>
+   <string>Counter 1.1a - Manabase Edition</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="verticalLayoutWidget">
