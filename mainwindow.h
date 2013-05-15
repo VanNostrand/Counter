@@ -22,8 +22,6 @@ private slots:
 
     void on_resetButton_clicked();
 
-    void on_setButton_clicked();
-
     void on_fileButton_clicked();
 
     void on_plusTwo_clicked();
@@ -41,6 +39,8 @@ private slots:
     void on_minusFive_clicked();
 
     void on_plusFive_clicked();
+
+    void on_addButton_clicked();
 
 private:
     QPalette* palette;

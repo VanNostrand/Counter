@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>453</width>
-    <height>103</height>
+    <width>463</width>
+    <height>122</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Counter 1.1a - Manabase Edition</string>
+   <string>Counter 1.2 - Manabase Edition</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>451</width>
-      <height>101</height>
+      <width>461</width>
+      <height>121</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -129,7 +129,7 @@
        <item>
         <widget class="QPushButton" name="resetButton">
          <property name="text">
-          <string>Reset</string>
+          <string>Set</string>
          </property>
         </widget>
        </item>
@@ -151,14 +151,14 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_4">
            <item>
-            <widget class="QPushButton" name="setButton">
+            <widget class="QPushButton" name="addButton">
              <property name="text">
-              <string>Set</string>
+              <string>Add</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QSpinBox" name="setValue">
+            <widget class="QSpinBox" name="addValue">
              <property name="minimum">
               <number>-500</number>
              </property>

@@ -81,9 +81,9 @@ void MainWindow::on_minusButton_clicked()
     update(ui->lcd->value() - 1);
 }
 
-void MainWindow::on_setButton_clicked()
+void MainWindow::on_addButton_clicked()
 {
-    update(ui->setValue->value());
+    update(ui->lcd->value() + ui->addValue->value());
 }
 
 void MainWindow::on_resetButton_clicked()
